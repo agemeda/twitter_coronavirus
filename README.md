@@ -237,7 +237,12 @@ You must:
 1. Insert into the `README.md` file a brief explanation of your project, including the 4 generated png files.
     This explanation should be suitable for a future employer to look at while they are interviewing you to get a rough idea of what you accomplished.
     (And you should tell them about this in your interviews!)
+**Summary**
 
+For this project, I analyzed tweets from 2020 involving the word 'coronavirus'. Over the year, we can expect there to be an increase in tweets involving the word as the virus spread and became a global issue. The tweets were broken up by language and separately by country, and counted by how often they came up in each of those keys. The results were than narrowed down by the top 10 keys, so only data from the top 10 countries and languages that tweeted a certain coronavirus hashtag were recorded.
+
+using the alternate reduce function, and the visualize file I was able to generate four graphs, Top 10 Countries that tweeted #coronavirus in 2020, Top 10 Languages that tweeted #coronavirus in 2020, Top 10 Countries that tweeted #코로나바이러스 in 2020, Top 10 languages that tweeted #코로나바이러스 in 2020.
+  
 ## Submission
 
 Upload a link to you github repository on sakai.
