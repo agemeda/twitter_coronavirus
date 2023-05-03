@@ -12,6 +12,9 @@ args = parser.parse_args()
 import os
 import json
 from collections import Counter,defaultdict
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 
 # open the input path
 with open(args.input_path) as f:
@@ -26,3 +29,31 @@ if args.percent:
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
 for k,v in items:
     print(k,':',v)
+
+# my code
+topten = items[:10]
+keys = [item[0] for item in topten]
+values = [item[1] for item in topten]
+#small to large keys and values
+keys = keys[::-1]
+values = values[::-1]
+
+plt.bar(range(len(keys)), values)
+plt.xticks(range(len(keys)), keys)
+
+# titles
+if args.input_path[-1] == 'g':
+    plt.xlabel('Language')
+else:
+    plt.xlabel('Country')
+if args.percent:
+    ddplt.ylabel('Percentage of Tweets')
+else:
+    plt.ylabel('Number of Tweets')
+
+# print graph
+
+if args.input_path[-1] == 'g':
+    plt.savefig(args.key[1:] + '_lang.png')
+else:
+    plt.savefig(args.key[1:] + '_country.png')
