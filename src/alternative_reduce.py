@@ -30,13 +30,11 @@ for key in args.keys:
             except:
                 pass
             yaxis.append(val)
-            xaxis = np.arrange(len(yaxis))
-#yaxis is number of tweets using hashtag    
-    plt.plot(np.arange(xaxis, yaxis, label=key)
+    plt.plot(np.arange(len(yaxis)), yaxis, label=key)
 
 plt.xlabel("Date in 2020")
 plt.ylabel("# of Tweets")
-plt.title("Number of Tweets with a given hashtag by day in 2020")
+plt.title("Number of Tweets with hashtag (2020)")
 plt.legend()
 plt.xticks([0, 60, 121, 182, 244, 305], ["Jan", "Mar", "May", "Jul", "Sept", "Nov"])
 plt.savefig("myplot4.png", bbox_inches="tight")

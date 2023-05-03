@@ -15,4 +15,7 @@ For this project, I analyzed tweets from 2020 involving the word 'coronavirus'. 
 
 using the alternate reduce function, and the visualize file I was able to generate four graphs, Top 10 Countries that tweeted #coronavirus in 2020, Top 10 Languages that tweeted #coronavirus in 2020, Top 10 Countries that tweeted #코로나바이러스 in 2020, Top 10 languages that tweeted #코로나바이러스 in 2020.
 
-![(src/coronavirus_lang.png)]  
+![Tweets mentioning #coronavirus By Language (2020)](coronavirus_lang.png)
+![Tweets mentioning #coronavirus By Country (2020)](coronavirus_country.png)
+![Tweets mentioning #코로나바이러스 By Language (2020)](코로나바이러스_lang.png)
+![Tweets mentioning #코로나바이러스 By Country (2020)](코로나바이러스_country.png)
